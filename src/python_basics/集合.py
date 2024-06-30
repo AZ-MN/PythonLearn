@@ -31,10 +31,141 @@ def set_info():
     # 集合更新
     s4.update([6, 7, 8])
     s4.update((8, 9, 10))
+    s4.update(s3)
     print(s4)
 
-    # 集合删除元素
-    s4.remove(1)
+    # 集合删除pop()
+    s = {23, 3423, 83, 1, 2, 7, 3}
+    print(s)
+    print(s.pop())
+    print(s.pop())
+    print(s.pop())
+    print(s.pop())
+    print(s)
+
+    # 集合删除remove()
+    s = {23, 3423, 83, 1, 2, 7, 3}
+    print(s)
+    res = s.remove(3)
+    print(res)
+    print(s)
+
+    # 集合删除discard()
+    res = s.discard(23)
+    print(s)
+    res = s.discard(23)
+    print(s)
+    res = s.discard(23)
+    print(s)
+    res = s.discard(23)
+    print(s)
+
+    # 集合删除clear()
+    s = {23, 3423, 83, 1, 2, 7, 3}
+    print(s)
+    res = s.clear()
+    print(s)
+    print(res)
+    print("*" * 10)
+
+    # 判断两个集合是否不相交
+    s = {1, 2, 3}
+    print(s.isdisjoint({3, 4, 5}))
+    print(s.isdisjoint({7, 8, 9}))
+    print("*" * 10)
+
+    # 判断一个集合是否是另一个集合的子集
+    s = {1, 2, 3}
+    print(s.issubset({1, 2}))
+    print(s.issubset({1, 2, 3}))
+    print(s.issubset({1, 2, 3, 4}))
+    print(s.issuperset({3, 4, 5}))
+    print("*" * 10)
+
+    # 也可以通过关系运算符判断
+    s = {1, 2, 3}
+    print(s <= {1, 2})
+    print(s <= {1, 2, 3})
+    print(s <= {1, 2, 3, 4})
+    print(s <= {3, 4, 5})
+    print("*" * 10)
+
+    # 判断是否为真子集
+    s = {1, 2, 3}
+    print(s < {1, 2})
+    print(s < {1, 2, 3})
+    print(s < {1, 2, 3, 4})
+    print(s < {3, 4, 5})
+    print("*" * 10)
+
+    # 判断集合是否是另一个集合的超集
+    s = {1, 2, 3}
+    print(s.issuperset({1, 2}))
+    print(s.issuperset({1, 2, 3}))
+    print(s.issuperset({1, 2, 3, 4}))
+    print(s.issuperset({3, 4, 5}))
+    print("*" * 10)
+    # 也可以通过运算符 >= 判断
+    s = {1, 2, 3}
+    print(s >= {1, 2})
+    print(s >= {1, 2, 3})
+    print(s >= {1, 2, 3, 4})
+    print(s >= {3, 4, 5})
+    print("*" * 10)
+    # 判断是否为真超集
+    s = {1, 2, 3}
+    print(s > {1, 2})
+    print(s > {1, 2, 3})
+    print(s > {1, 2, 3, 4})
+    print(s > {3, 4, 5})
+    print("*" * 10)
+
+    # 集合的并集
+    print("并集")
+    s1 = {1, 2, 3}
+    s2 = {4, 5, 6}
+    s3 = {6, 7, 8}
+    print(s1.union(s2))
+    print(s1.union(s2, s3))
+    # 也可以通过运算符 | 运算
+    print(s1 | s2)
+    print(s1 | s2 | s3)
+
+    # 集合的交集
+    print("交集")
+    s1 = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+    s2 = {4, 5, 6}
+    s3 = {6, 7, 8}
+    s4 = {10}
+    print(s1.intersection(s2))
+    print(s1.intersection(s2, s3))
+    print(s1.intersection(s2, s3, s4))
+    # 也可以通过运算符 & 运算
+    print(s1 & s2)
+    print(s1 & s2 & s3)
+    print(s1 & s2 & s4)
+
+    # 集合的差集
+    print("差集")
+    s1 = {1, 2, 3, 4, 5, 6}
+    s2 = {4, 5, 6}
+    s3 = {6, 7, 8}
+    print(s1.difference(s2))
+    print(s1.difference(s2, s3))
+    print(s1.difference(s3))
+    # 也可以通过运算符 - 运算
+    print(s1 - s2)
+    print(s1 - s2 - s3)
+    print(s1 - s3)
+
+    # 集合的对称差集
+    print("对称差集")
+    s1 = {1, 2, 3, 4}
+    s2 = {4, 5, 6, 7}
+    print(s1.symmetric_difference(s2))
+    # 也可以通过运算符 ^ 运算
+    print(s1 ^ s2)
+
 
 # 运行程序
 set_info()
