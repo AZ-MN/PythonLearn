@@ -72,3 +72,7 @@ print(m)
 show3()
 # 使用全局变量
 print(m)
+
+num = input()
+num = int(num)
+print(round(num, 2))
