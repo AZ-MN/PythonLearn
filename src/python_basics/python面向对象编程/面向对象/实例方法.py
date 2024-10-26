@@ -16,7 +16,7 @@ class Student(object):
 
     # 对象描述方法
     def __str__(self):
-        s = f"{self.name}选课如下：\n "
+        s = f"{self.name}选课如下：\n"
         c = "、".join(self.course)
         s += c
         return s
