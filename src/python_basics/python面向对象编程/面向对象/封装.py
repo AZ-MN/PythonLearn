@@ -17,6 +17,7 @@
 但是要注意的是，在Python中名称改写只是一种约定，并没有真正实现私有的作用，在Python中只要想访问，所有的数据都可以拿到，获取方法在这里不讨论。
 """
 
+
 # 无下划线前缀(公有权限)
 # Python 中默认定义的属性和方法，都是公有的方法。无论是在类外，还是在派生的子类中，都可以进行访问，类似其它语言中的 public 修饰符的作用。
 # class A:
@@ -103,7 +104,6 @@ class A(object):
         # 在类中使用私有方法
         self.__info()
 
-
     # 保护权限的方法
     def _display(self):
         print(f"B: {self._b}")
@@ -112,6 +112,7 @@ class A(object):
     def __info(self):
         # 在类中使用私有属性
         print(self.__c)
+
 
 if __name__ == "__main__":
     obj = A()
