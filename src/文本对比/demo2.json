@@ -1,0 +1,83 @@
+{
+  "buttonCode": "SUBMIT",
+  "formId": "662500cad7e96243e3a53ad3",
+  "processId": "66250359d7e96243e3a53ae5",
+  "comment": "",
+  "attachmentsOfComment": [],
+  "data": {
+    "a66b44ff8246a405f9381de8": [
+      {
+        "owner": "100466306263974674432",
+        "createdBy": "100466306263974674432",
+        "lastUpdatedBy": "100466306263974674432",
+        "creationDate": "2024-12-16 21:28:57",
+        "lastUpdateDate": "2024-12-16 21:28:57",
+        "objectVersionNumber": 1,
+        "id": "656608800192462976",
+        "userId": "100466306263974674432",
+        "creatorName": "黄志雄",
+        "url": "https://apaas-3220.dfy.definesys.cn/apaas/backend/apitest/apitest-app/xdap-app/attachments/downloadFile?file=1ed53349-d54d-4389-a239-a84f166ed7d5",
+        "fileName": "OIP.jpeg",
+        "fileType": "image",
+        "fileSize": 32255,
+        "fileSizeStr": "31.5 KB",
+        "ossBucketName": "xdap-app-dev",
+        "ossObjectName": "1ed53349-d54d-4389-a239-a84f166ed7d5",
+        "uploadId": "",
+        "tenantId": "466995752942436353",
+        "yeahMonthDate": "202404"
+      }
+    ],
+    "36c94b1980cea864fa1b4908": [],
+    "43cd4612880bb5d223a21a21": {
+      "province": {
+        "code": "",
+        "name": ""
+      },
+      "city": {
+        "code": "",
+        "name": ""
+      },
+      "area": {
+        "code": "",
+        "name": ""
+      }
+    },
+    "042f493c8fd8fb126d0d255e": "子流程-25-{% mock 'increment' %}",
+    "f39148209ef4eff5eda532fa": "TRUE",
+    "ca4a407696174e06b1238e2c": null,
+    "42a840808819b2f71382be51": "",
+    "_status": "added"
+  },
+  "tableData": {
+    "362d4468baa88f1bdc004325": [
+      {
+        "fd7342edb0613ac9bfdb6098": "TRUE",
+        "52294de3bc6facf85fb72f1a": {
+          "province": {
+            "code": "",
+            "name": ""
+          },
+          "city": {
+            "code": "",
+            "name": ""
+          },
+          "area": {
+            "code": "",
+            "name": ""
+          }
+        },
+        "7bf144bbb1ab79121f2d4d42": [],
+        "currentIndexRowId": "1791536222680421",
+        "_XID": "c1c6cbf0ef13aee72c50bc9b",
+        "_status": "added"
+      }
+    ]
+  },
+  "dataChange": {},
+  "tableDataChange": {},
+  "platformType": "",
+  "tempFlag": "false",
+  "_formDataStatus": "ENABLE",
+  "menuId": "569976280439586816"
+}
