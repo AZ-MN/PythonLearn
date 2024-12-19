@@ -38,7 +38,6 @@ format格式说明:
 %(message)s 打印日志信息
 """
 
-
 # 导入日志模块
 import logging
 
