@@ -75,8 +75,8 @@ math.tanh(x)	返回 x 的双曲正切值。
 math.trunc(x)	返回 x 截断整数的部分，即返回整数部分，删除小数部分
 """
 
-
 import math
+
 # 常用函数和常量
 print(math.pi)  # π
 print(math.tau)  # 2π

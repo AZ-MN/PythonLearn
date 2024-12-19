@@ -1,1 +1,1 @@
-{"name": "John", "age": 25, "city": "New York"}
+"{\"code\": 200, \"message\": \"OK\", \"data\": [{\"id\": \"0001\", \"name\": \"iPhone\", \"price\": 8999, \"is_sale\": true},{\"id\": \"0002\", \"name\": \"Mac\", \"price\": 21999, \"is_sale\": true},{\"id\": \"0003\", \"name\": \"Watch\", \"price\": 6999, \"is_sale\": true}]}"

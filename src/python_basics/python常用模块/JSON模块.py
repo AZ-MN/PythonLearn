@@ -111,7 +111,7 @@ data = {
 
 # 将数据写入JSON文件
 with open("data.json", "w") as file:
-    json.dump(data, file)  # 序列化，并且写入文件
+    json.dump(json_str, file)  # 序列化，并且写入文件
 
 
 # json.load：从文件中读取 JSON 格式的数据并解码为 Python 对象。

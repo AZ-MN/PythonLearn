@@ -1,73 +1,31 @@
 {
-  "buttonCode": "SUBMIT",
-  "formId": "662500cad7e96243e3a53ad3",
-  "processId": "66250359d7e96243e3a53ae5",
-  "comment": "",
-  "attachmentsOfComment": [],
-  "data": {
-    "042f493c8fd8fb126d0d255e": "子流程-25-{% mock 'increment' %}",
-    "ca4a407696174e06b1238e2c": null,
-    "36c94b1980cea864fa1b4908": [],
-    "42a840808819b2f71382be51": "",
-    "a66b44ff8246a405f9381de8": [
-      {
-        "fileName": "OIP.jpeg",
-        "fileType": "image",
-        "fileSize": 32255,
-        "fileSizeStr": "31.5 KB",
-        "creatorName": "黄志雄",
-        "ossObjectName": "4da6b840-cd25-44be-8a06-0016da02ffd3",
-        "creationDate": "2024-04-22 10:35:18",
-        "tenantId": "466995752942436353",
-        "id": "570195994601455744",
-        "url": "https://apaas-3220.dfy.definesys.cn/apaas/backend/apitest/apitest-app/xdap-app/attachments/downloadFile?file=4da6b840-cd25-44be-8a06-0016da02ffd3"
-      }
-    ],
-    "43cd4612880bb5d223a21a21": {
-      "province": {
-        "code": "",
-        "name": ""
-      },
-      "city": {
-        "code": "",
-        "name": ""
-      },
-      "area": {
-        "code": "",
-        "name": ""
-      }
-    },
-    "f39148209ef4eff5eda532fa": "TRUE",
-    "_status": "added"
-  },
-  "tableData": {
-    "362d4468baa88f1bdc004325": [
-      {
-        "52294de3bc6facf85fb72f1a": {
-          "province": {
-            "code": "",
-            "name": ""
-          },
-          "city": {
-            "code": "",
-            "name": ""
-          },
-          "area": {
-            "code": "",
-            "name": ""
-          }
-        },
-        "fd7342edb0613ac9bfdb6098": "TRUE",
-        "currentIndexRowId": "3630944828156386",
-        "_XID": "c1e30dccdcf7929d25d27c48",
-        "_status": "added"
-      }
-    ]
-  },
-  "dataChange": {},
-  "tableDataChange": {},
-  "platformType": "",
-  "tempFlag": "false",
-  "_formDataStatus": "ENABLE",
-  "menuId": "569976280439586816"
+  "单行输入": "单行",
+  "多行输入": "多行",
+  "数字输入": 123,
+  "金额": 45.36,
+  "人员选择": "员工A",
+  "部门选择": "部门A",
+  "日期时间": "2024-12-19 11: 54:31",
+  "单选框": "选项1",
+  "多选框": "选项1",
+  "下拉框": "选项2",
+  "数据选择": "数据",
+  "附件上传": "demo.txt",
+  "地区地址": "上海市市辖区徐汇区",
+  "开关": true,
+  "tableData": [
+    {
+      "子表单行": "单行",
+      "子表多行": "多行",
+      "子表数字": 123,
+      "子表人员": "员工A",
+      "子表部门": "部门A",
+      "子表日期": "2024-12-19 11: 54:31",
+      "子表下拉": "选项1",
+      "子表数据": "数据",
+      "子表地区": "上海市市辖区徐汇区",
+      "子表附件": "demo.txt",
+      "子表开关": false
+    }
+  ]
 }
