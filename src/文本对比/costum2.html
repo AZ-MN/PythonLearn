@@ -1,0 +1,193 @@
+var componentOptions = {
+    language: 'Vue',
+    template: `
+        <div class="modal-wrapper">
+            <div class="input-container">
+                <div class="input-label"><strong>文本输入：</strong></div>
+                <input v-model="inputValue" placeholder="请输入内容" class="text-input" :style="{ 'height': '30px' }" />
+            </div>
+            <div class="input-gap"></div>
+            <div class="input-container">
+                <div class="input-label"><strong>数字输入：</strong></div>
+                <input v-model.number="numberValue" type="number" placeholder="请输入数字" class="number-input" />
+            </div>
+            <div class="input-gap"></div>
+            <div class="input-container">
+                <div class="input-label"><strong>日期时间：</strong></div>
+                <input type="datetime-local" v-model="dateTimeValue" class="datetime-input" />
+            </div>
+            <div class="input-gap"></div>
+            <div class="input-container">
+                <div class="input-label"><strong>多行输入：</strong></div>
+                <textarea v-model="multiLineValue" placeholder="请输入多行内容" class="multi-line-input"></textarea>
+            </div>
+            <div class="input-gap"></div>
+            <div class="input-container">
+                <div class="input-label"><strong>开关：</strong></div>
+                <div class="radio-group">
+                    <label><input type="radio" v-model="switchValue" value="true" /> true</label>
+                    <label><input type="radio" v-model="switchValue" value="false" /> false</label>
+                </div>
+            </div>
+            <div class="footer-container">
+                <button @click="handleCancel">取消</button>
+                <button @click="handleConfirm">确定</button>
+            </div>
+        </div>
+    `,
+    footerTemplate: `
+        <div></div>
+    `,
+    data() {
+        return {
+            inputValue: '',
+            numberValue: null,
+            dateTimeValue: '',
+            multiLineValue: '',
+            switchValue: false,
+            modalOptions: {
+                modalVisible: true,
+                title: '自定义弹窗response整合',
+                wrapperClass: 'custom-modal',
+                closeConfig: {
+                    onClose: () => {
+                        lowCodeContext.businessEventEngine.cancelEventEmit()
+                    }
+                },
+                width: 'middle'
+            }
+        }
+    },
+    created() { },
+    methods: {
+        handleCancel() {
+            this.closeModal();
+            lowCodeContext.businessEventEngine.cancelEventEmit();
+        },
+        handleConfirm() {
+            // 返回所有输入组件的值
+            const inputData = {
+                textInput: this.inputValue,
+                numberInput: this.numberValue,
+                dateTimeInput: this.dateTimeValue,
+                multiLineInput: this.multiLineValue,
+                switchInput: this.switchValue
+            };
+            lowCodeContext.businessEventEngine.confirmEventEmit(inputData);
+            this.closeModal();
+        },
+        closeModal() {
+            this.modalOptions.modalVisible = false
+        }
+    }
+};
+
+// 样式部分（优化后的组件样式）
+var styleElement = document.createElement('style');
+styleElement.textContent = `
+/* 整体模态框样式 */
+.custom-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    max-width: 90%;
+    z-index: 9999;
+}
+
+.modal-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-label {
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* 通用输入框基础样式 */
+.text-input,
+.number-input,
+.datetime-input,
+.multi-line-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+/* 文本输入框高度单独设置 */
+.text-input {
+    height: 30px;
+}
+
+/* 多行输入框可垂直拉伸及最小高度设置 */
+.multi-line-input {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* 输入框获取焦点时的样式 */
+.text-input:focus,
+.number-input:focus,
+.datetime-input:focus,
+.multi-line-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.input-gap {
+    height: 20px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.radio-group label {
+    margin-right: 15px;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.footer-container button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.footer-container button:hover {
+    background-color: #e6e6e6;
+    border-color: #aaa;
+}
+`;
+document.head.appendChild(styleElement);
+
+return componentOptions;
