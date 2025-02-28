@@ -156,7 +156,6 @@ def create_task6():
 if __name__ == '__main__':
     create_task6()
 
-
 # 在 Python3.10 版本中，Gevent 的 monkey patch 功能在某些情况下可能无效。
 # 这是因为在 Python3.10 中引入了 asyncio 的新的事件循环机制，与 Gevent 的事件循环有所不同，导致 monkey patch 在有些情况下失效。
 # Gevent 官方还没有正式发布兼容 Python3.10 版本的版本，因此在 Python3.10 中使用 monkey.patch_all() 方法可能无法正常实现非阻塞的协程 I/O。
