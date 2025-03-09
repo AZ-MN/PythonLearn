@@ -83,16 +83,16 @@ charset：连接数据库时使用的字符集，默认为 utf8。
 # 游标对象.execute(query, args=None)
 # query：需要执行的 SQL 语句
 # args：为 SQL 语句中的占位符提供参数，防止 SQL 注入的发生
-import pymysql
-
-db_connect = pymysql.Connect(
-    host='127.0.0.1',
-    port=3306,
-    user='root',
-    password='970413',
-    database='connect_test',
-    charset='utf8'
-)
+# import pymysql
+#
+# db_connect = pymysql.Connect(
+#     host='127.0.0.1',
+#     port=3306,
+#     user='root',
+#     password='970413',
+#     database='connect_test',
+#     charset='utf8'
+# )
 
 # 查询操作
 # 查询单条记录
@@ -162,14 +162,66 @@ db_connect = pymysql.Connect(
 # db_connect.close()
 
 # 删除操作
-cursor = db_connect.cursor()
-sql = '''delete from user where age = %s'''
-value = '18'
-cursor.execute(sql, value)
-sql = '''select * from user'''
-cursor.execute(sql)
-result = cursor.fetchall()
-db_connect.commit()
-print(result)
-cursor.close()
-db_connect.close()
+# cursor = db_connect.cursor()
+# sql = '''delete from user where age = %s'''
+# value = '18'
+# cursor.execute(sql, value)
+# sql = '''select * from user'''
+# cursor.execute(sql)
+# result = cursor.fetchall()
+# db_connect.commit()
+# print(result)
+# cursor.close()
+# db_connect.close()
+
+
+# 使用Python的pymysql库连接MySQL并创建users表的示例代码
+import pymysql
+
+# 数据库连接配置（需根据实际情况修改）
+db_config = {
+    'host': 'localhost',
+    'port': 3306,
+    'user': 'root',
+    'password': 'root',
+    'database': 'connect_test',
+    'charset': 'utf8mb4'
+}
+
+# 创建表的SQL语句
+create_table_sql = """
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    age INT,
+    gender VARCHAR(10),
+    is_single BOOLEAN DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+"""
+
+try:
+    # 建立数据库连接
+    connection = pymysql.connect(**db_config)
+
+    # 创建游标对象
+    cursor = connection.cursor()
+
+    # 执行创建表操作
+    cursor.execute(create_table_sql)
+
+    # 提交事务
+    connection.commit()
+    print("表创建成功！")
+
+except pymysql.Error as e:
+    print(f"数据库操作错误：{e}")
+    # 发生错误时回滚
+    connection.rollback()
+
+finally:
+    # 关闭连接
+    if 'cursor' in locals():
+        cursor.close()
+    if 'connection' in locals():
+        connection.close()
