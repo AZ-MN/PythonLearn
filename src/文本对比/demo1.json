@@ -1,31 +1,152 @@
 {
-  "单行输入": "单行",
-  "多行输入": "多行",
-  "数字输入": 123,
-  "金额": 45.36,
-  "人员选择": "员工A",
-  "部门选择": "部门A",
-  "日期时间": "2024-12-19 11: 54:31",
-  "单选框": "选项1",
-  "多选框": "选项1",
-  "下拉框": "选项2",
-  "数据选择": "数据",
-  "附件上传": "demo.txt",
-  "地区地址": "上海市市辖区徐汇区",
-  "开关": true,
-  "tableData": [
-    {
-      "子表单行": "单行",
-      "子表多行": "多行",
-      "子表数字": 123,
-      "子表人员": "员工A",
-      "子表部门": "部门A",
-      "子表日期": "2024-12-19 11: 54:31",
-      "子表下拉": "选项1",
-      "子表数据": "数据",
-      "子表地区": "上海市市辖区徐汇区",
-      "子表附件": "demo.txt",
-      "子表开关": false
+  "buttonCode": "SUBMIT",
+  "formId": "64cc6f98af0dbd1f2ce54d8e",
+  "processId": "65891e07a99dbe7b0637d1c5",
+  "comment": "",
+  "attachmentsOfComment": [],
+  "data": {
+    "c00a423d8d0120c67219843a": "我是被统计",
+    "05bc4fbca3acda4eb0d64985": "我是被统计",
+    "c13247c8bf3692708270e1f0": "Apifox接口测试专用",
+    "151a4c8884f51b92fbab8dd5": null,
+    "ca2d43a9b5dae99a9f76e42e": TRUE,
+    "3c444026846eeb22035ccdaa": "我是自定义",
+    "47c44c9a8274d9cd66d52143": null,
+    "816a41aa889bc150cfa67ca1": "11",
+    "e8b24cdb9f7438bb23aaf85f": "我是被统计",
+    "846a4ab8a63961ce5dc498af": null,
+    "53ce49aa9ba1c0e34ac29ee9": 11,
+    "b1474109b7c1f0b4f1b636f1": 1111,
+    "ac0a4bd19e05ad829f4cbbc6": 11,
+    "22f9431eaca05c427408f2ac": "12",
+    "877f4f9ea11826597c267bf6": "2023-08-07",
+    "91fc449cb0d8509a9fdac441": "2023-08-07",
+    "29b84028a5eb8952a2988895": [
+      {
+        "id": "100523533556471824384",
+        "account": "publicAccount1",
+        "username": "publicAccount1"
+      }
+    ],
+    "eccd4e8997316a25045a940b": [
+      {
+        "id": "100510093069165527040",
+        "account": "ApifoxAdmin",
+        "username": "Apifox接口测试专用"
+      }
+    ],
+    "fd5045a0b0155a92476d5654": [
+      {
+        "id": "101571655949660454912",
+        "name": "金州勇士",
+        "structureCode": "101571655949660454912",
+        "structureName": "金州勇士",
+        "departmentCode": "warrior",
+        "leafNodeFlag": false
+      }
+    ],
+    "23714cf4a51fef961a0a52c3": null,
+    "dcd9406bbed3efd1d000e3b5": [
+      "3mcIs"
+    ],
+    "a86f4e258cce104c40287291": [
+      "rP8w5"
+    ],
+    "9e3c47d0bd98d7237a2613d6": [
+      {
+        "id": "572478210297561217",
+        "name": "新增的数据"
+      }
+    ],
+    "8f83434eaf1aceb8001369c9": [
+      {
+        "id": "572478210297561217",
+        "name": "新增的数据"
+      }
+    ],
+    "26814deba8ee6b269d37d08b": {
+      "province": {
+        "code": "1100000000",
+        "name": "北京市"
+      },
+      "city": {
+        "code": "1101000000",
+        "name": "市辖区"
+      },
+      "area": {
+        "code": "1101010000",
+        "name": "东城区"
+      }
+    },
+    "63634123b4fc74d5b78df4e3": null,
+    "d8bc4f68a477a9d437cb2202": "FALSE",
+    "_status": "added"
+  },
+  "tableData": {
+    "6c1c41b0922e9b55dfcc694e": [
+      {
+        "110343febc71e28e91a6812c": [
+          {
+            "id": "572478210297561217",
+            "name": "新增的数据"
+          }
+        ],
+        "3cef4027a26171e828b86d27": [
+          {
+            "fileName": "测试附件.xlsx",
+            "fileType": "excel",
+            "fileSize": 10144,
+            "fileSizeStr": "9.9 KB",
+            "creatorName": "Apifox接口测试专用",
+            "ossObjectName": "fe25aea5-e42e-43db-b183-e1193877c22e",
+            "creationDate": "2025-03-25 10:39:18",
+            "tenantId": "569243048534343681",
+            "id": "692321711986638976",
+            "url": "https://apaas-404rc.dfy.definesys.cn/apaas/backend/apitest/apaas-apitest-app/xdap-app/attachments/downloadFile?file=fe25aea5-e42e-43db-b183-e1193877c22e"
+          }
+        ],
+        "1abd430f9c0f0d686bdea14b": "666",
+        "08c8421090fa3344b08bb9aa": 我是单行输入,
+        "17eb45f4bb65f151056020d6": [
+          "M4rBR"
+        ],
+        "470042599977fa5415c4997a": "多行",
+        "6fb4409497dedcba39fbaca0": 666,
+        "15764f4bbfdf6e764e2a1c57": [
+          {
+            "account": "ApifoxAdmin",
+            "id": "100510093069165527040",
+            "managerId": "100567654721129545728",
+            "username": "Apifox接口测试专用"
+          }
+        ],
+        "a66c4d97a5244ba17eb1d5b7": [
+          {
+            "departmentCode": "test",
+            "id": "101571655949333299200",
+            "leafNodeFlag": false,
+            "name": "测试部",
+            "structureCode": "101571655949333299200",
+            "structureName": "测试部"
+          }
+        ],
+        "aa7e4feb85758d246b5b31cd": "2023-07-03",
+        "currentIndexRowId": "7761410760203549",
+        "_XID": "3e5f17f8cc3626a6b08d15ea",
+        "_status": "added"
+      }
+    ]
+  },
+  "dataChange": {},
+  "tableDataChange": {},
+  "platformType": "",
+  "tempFlag": "false",
+  "sonTableConfigMap": {
+    "6c1c41b0922e9b55dfcc694e": {
+      "dataStatus": ""
     }
-  ]
+  },
+  "_formDataStatus": "ENABLE",
+  "menuId": "475262902756966400",
+  "draftStatusUpdateFlag": false
 }

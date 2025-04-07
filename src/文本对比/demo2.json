@@ -1,83 +1,194 @@
 {
-  "buttonCode": "SUBMIT",
-  "formId": "662500cad7e96243e3a53ad3",
-  "processId": "66250359d7e96243e3a53ae5",
-  "comment": "",
-  "attachmentsOfComment": [],
-  "data": {
-    "a66b44ff8246a405f9381de8": [
-      {
-        "owner": "100466306263974674432",
-        "createdBy": "100466306263974674432",
-        "lastUpdatedBy": "100466306263974674432",
-        "creationDate": "2024-12-16 21:28:57",
-        "lastUpdateDate": "2024-12-16 21:28:57",
-        "objectVersionNumber": 1,
-        "id": "656608800192462976",
-        "userId": "100466306263974674432",
-        "creatorName": "黄志雄",
-        "url": "https://apaas-3220.dfy.definesys.cn/apaas/backend/apitest/apitest-app/xdap-app/attachments/downloadFile?file=1ed53349-d54d-4389-a239-a84f166ed7d5",
-        "fileName": "OIP.jpeg",
-        "fileType": "image",
-        "fileSize": 32255,
-        "fileSizeStr": "31.5 KB",
-        "ossBucketName": "xdap-app-dev",
-        "ossObjectName": "1ed53349-d54d-4389-a239-a84f166ed7d5",
-        "uploadId": "",
-        "tenantId": "466995752942436353",
-        "yeahMonthDate": "202404"
-      }
-    ],
-    "36c94b1980cea864fa1b4908": [],
-    "43cd4612880bb5d223a21a21": {
-      "province": {
-        "code": "",
-        "name": ""
-      },
-      "city": {
-        "code": "",
-        "name": ""
-      },
-      "area": {
-        "code": "",
-        "name": ""
-      }
-    },
-    "042f493c8fd8fb126d0d255e": "子流程-25-{% mock 'increment' %}",
-    "f39148209ef4eff5eda532fa": "TRUE",
-    "ca4a407696174e06b1238e2c": null,
-    "42a840808819b2f71382be51": "",
-    "_status": "added"
-  },
-  "tableData": {
-    "362d4468baa88f1bdc004325": [
-      {
-        "fd7342edb0613ac9bfdb6098": "TRUE",
-        "52294de3bc6facf85fb72f1a": {
-          "province": {
-            "code": "",
-            "name": ""
-          },
-          "city": {
-            "code": "",
-            "name": ""
-          },
-          "area": {
-            "code": "",
-            "name": ""
-          }
+    "buttonCode": "SUBMIT",
+    "formId": "64cc6f98af0dbd1f2ce54d8e",
+    "processId": "65891e07a99dbe7b0637d1c5",
+    "comment": "",
+    "attachmentsOfComment": [],
+    "data": {
+        "c00a423d8d0120c67219843a": "单行输入1",
+        "05bc4fbca3acda4eb0d64985": "单行输入2",
+        "c13247c8bf3692708270e1f0": "单行输入3",
+        "151a4c8884f51b92fbab8dd5": "单行输入4",
+        "ca2d43a9b5dae99a9f76e42e": "单行输入5",
+        "3c444026846eeb22035ccdaa": "单行输入6",
+        "47c44c9a8274d9cd66d52143": "单行输入7",
+        "816a41aa889bc150cfa67ca1": "多行输入1",
+        "e8b24cdb9f7438bb23aaf85f": "多行输入2",
+        "846a4ab8a63961ce5dc498af": "多行输入3",
+        "53ce49aa9ba1c0e34ac29ee9": 1,
+        "b1474109b7c1f0b4f1b636f1": 2,
+        "ac0a4bd19e05ad829f4cbbc6": 3,
+        "22f9431eaca05c427408f2ac": "666",
+        "877f4f9ea11826597c267bf6": "2025-03-04",
+        "91fc449cb0d8509a9fdac441": "2025-03-05",
+        "29b84028a5eb8952a2988895": [
+            {
+                "id": "100523533556471824384",
+                "username": "publicAccount1",
+                "account": "publicAccount1"
+            }
+        ],
+        "eccd4e8997316a25045a940b": [
+            {
+                "id": "100510093069165527040",
+                "username": "Apifox接口测试专用",
+                "deptName": "金州勇士",
+                "deptCode": "101571655949660454912",
+                "deptSingleName": "金州勇士",
+                "mainDepartment": {
+                    "id": "101571655949660454912",
+                    "name": "金州勇士",
+                    "status": "ENABLE",
+                    "structureCode": "101571655949660454912",
+                    "structureName": "金州勇士",
+                    "level": 1,
+                    "departmentCode": "warrior"
+                },
+                "account": "ApifoxAdmin",
+                "managerId": "100567654721129545728",
+                "managerInformation": {
+                    "id": "100567654721129545728",
+                    "username": "员工A-流程"
+                }
+            }
+        ],
+        "fd5045a0b0155a92476d5654": [
+            {
+                "id": "101571655949333299200",
+                "leafNodeFlag": true,
+                "structureCode": "101571655949333299200",
+                "structureName": "测试部",
+                "name": "测试部",
+                "departmentCode": "test",
+                "level": 1
+            }
+        ],
+        "23714cf4a51fef961a0a52c3": [
+            {
+                "id": "101571655949509459968",
+                "leafNodeFlag": true,
+                "structureCode": "101571655949509459968",
+                "structureName": "新泽西篮网",
+                "name": "新泽西篮网",
+                "departmentCode": "nets",
+                "level": 1
+            }
+        ],
+        "dcd9406bbed3efd1d000e3b5": [
+            "3mcIs"
+        ],
+        "a86f4e258cce104c40287291": [
+            "GFm2c"
+        ],
+        "9e3c47d0bd98d7237a2613d6": [
+            {
+                "id": "572478210297561217",
+                "name": "新增的数据"
+            }
+        ],
+        "8f83434eaf1aceb8001369c9": [
+            {
+                "id": "572478210297561217",
+                "name": "新增的数据"
+            }
+        ],
+        "26814deba8ee6b269d37d08b": {
+            "province": {
+                "code": "1100000000",
+                "name": "北京市"
+            },
+            "city": {
+                "code": "1101000000",
+                "name": "市辖区"
+            },
+            "area": {
+                "code": "1101010000",
+                "name": "东城区"
+            }
         },
-        "7bf144bbb1ab79121f2d4d42": [],
-        "currentIndexRowId": "1791536222680421",
-        "_XID": "c1c6cbf0ef13aee72c50bc9b",
+        "63634123b4fc74d5b78df4e3": [
+            {
+                "fileName": "测试附件.xlsx",
+                "fileType": "excel",
+                "fileSize": 10144,
+                "fileSizeStr": "9.9 KB",
+                "creatorName": "Apifox接口测试专用",
+                "ossObjectName": "4d3f1030-807f-472a-bd46-25b5c71b4e8d",
+                "creationDate": "2025-03-25 10:52:04",
+                "tenantId": "569243048534343681",
+                "id": "692324922600521856",
+                "url": "https://apaas-404rc.dfy.definesys.cn/apaas/backend/apitest/apaas-apitest-app/xdap-app/attachments/downloadFile?file=4d3f1030-807f-472a-bd46-25b5c71b4e8d"
+            }
+        ],
+        "d8bc4f68a477a9d437cb2202": "TRUE",
         "_status": "added"
-      }
-    ]
-  },
-  "dataChange": {},
-  "tableDataChange": {},
-  "platformType": "",
-  "tempFlag": "false",
-  "_formDataStatus": "ENABLE",
-  "menuId": "569976280439586816"
+    },
+    "tableData": {
+        "6c1c41b0922e9b55dfcc694e": [
+            {
+                "110343febc71e28e91a6812c": [
+                    {
+                        "id": "572478210297561217",
+                        "name": "新增的数据"
+                    }
+                ],
+                "3cef4027a26171e828b86d27": [
+                    {
+                        "fileName": "测试附件.xlsx",
+                        "fileType": "excel",
+                        "fileSize": 10144,
+                        "fileSizeStr": "9.9 KB",
+                        "creatorName": "Apifox接口测试专用",
+                        "ossObjectName": "98b8dfdf-5d23-42c5-913b-5948d3ee8d11",
+                        "creationDate": "2025-03-25 10:52:15",
+                        "tenantId": "569243048534343681",
+                        "id": "692324971199922304",
+                        "url": "https://apaas-404rc.dfy.definesys.cn/apaas/backend/apitest/apaas-apitest-app/xdap-app/attachments/downloadFile?file=98b8dfdf-5d23-42c5-913b-5948d3ee8d11"
+                    }
+                ],
+                "1abd430f9c0f0d686bdea14b": "666",
+                "08c8421090fa3344b08bb9aa": "单行输入",
+                "17eb45f4bb65f151056020d6": [
+                    "M4rBR"
+                ],
+                "470042599977fa5415c4997a": "多行输入",
+                "6fb4409497dedcba39fbaca0": 123,
+                "15764f4bbfdf6e764e2a1c57": [
+                    {
+                        "id": "100510093069165527040",
+                        "username": "Apifox接口测试专用",
+                        "account": "ApifoxAdmin",
+                        "managerId": "100567654721129545728"
+                    }
+                ],
+                "a66c4d97a5244ba17eb1d5b7": [
+                    {
+                        "id": "101571655949333299200",
+                        "leafNodeFlag": true,
+                        "structureCode": "101571655949333299200",
+                        "structureName": "测试部",
+                        "name": "测试部",
+                        "departmentCode": "test",
+                        "level": 1
+                    }
+                ],
+                "aa7e4feb85758d246b5b31cd": "2025-03-25",
+                "currentIndexRowId": "7761410760203549",
+                "_XID": "3e5f17f8cc3626a6b08d15ea",
+                "_status": "added"
+            }
+        ]
+    },
+    "dataChange": {},
+    "tableDataChange": {},
+    "platformType": "",
+    "tempFlag": "false",
+    "sonTableConfigMap": {
+        "6c1c41b0922e9b55dfcc694e": {
+            "dataStatus": ""
+        }
+    },
+    "_formDataStatus": "ENABLE",
+    "menuId": "475262902756966400",
+    "draftStatusUpdateFlag": false
 }
