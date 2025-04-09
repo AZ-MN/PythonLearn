@@ -36,12 +36,12 @@ def check_login(func):
     return wrapper
 
 
-@check_login
-def add_to_cart(self):
+@check_login  # check_login(add_to_cart)
+def add_to_cart(*args, **kwargs):
     print("成功添加商品到购物车")
 
 
-add_to_cart(False)  # 使用装饰器相当于绑定了函数，相当于add_to_cart = check_login(add_to_cart) --> add_to_cart = wrapper
+add_to_cart(True)  # 使用装饰器相当于绑定了函数，相当于add_to_cart = check_login(add_to_cart) --> add_to_cart = wrapper
 
 
 # add_to_cart = check_login(add_to_cart)
